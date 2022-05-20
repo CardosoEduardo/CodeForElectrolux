@@ -12,7 +12,7 @@ float retornaMedia(float *array){
 	return mediaArray/N;
 }
 
-float returnaMaior(float *array, float maior){
+float retornaMaior(float *array, float maior){
 	
 	for(int i=0; i<N;i++){
         if(array[i]>maior){
@@ -22,7 +22,7 @@ float returnaMaior(float *array, float maior){
     return maior;
 }
 
-float returnaMenor(float *array, float menor){
+float retornaMenor(float *array, float menor){
 	
 	for(int i=0; i<N;i++){
         if(array[i]<menor){
@@ -72,8 +72,8 @@ int main()
 	}
 
         
-    maior = returnaMaior(array,maior); 
-	menor = returnaMenor(array,menor); 
+    maior = retornaMaior(array,maior); 
+	menor = retornaMenor(array,menor); 
 	mediaCalculada = retornaMedia(array);
 	newPosition = retornaNumeroPares(array);
 	float newArray[newPosition];
